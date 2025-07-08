@@ -85,14 +85,6 @@ export default function TodoList() {
                     value={editValue}
                     onChange={(e) => setEditValue(e.target.value)}
                     className={styles.editInput}
-                    onKeyPress={(e) => {
-                      if (e.key === "Enter") {
-                        handleSaveEdit(todo.id);
-                      }
-                      if (e.key === "Escape") {
-                        handleCancelEdit();
-                      }
-                    }}
                     autoFocus
                   />
                   <button
